@@ -29,7 +29,11 @@ yarn-error.*
 *.pem
 
 # local env files
+.env*
 .env*.local
+
+# eas.json file
+eas.json
 
 # typescript
 *.tsbuildinfo

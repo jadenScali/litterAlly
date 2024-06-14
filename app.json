@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "LitterAllySmart",
-    "slug": "LitterAllySmart",
-    "version": "1.0.0",
+    "name": "LitterAlly",
+    "slug": "litterAllyDone",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,10 +11,17 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.jadenexpo.litterAllyDone",
+      "buildNumber": "3"
     },
     "android": {
+      "package": "com.jadenexpo.litterAllyDone",
+      "versionCode": 11,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -22,6 +29,23 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "adda7ee8-8465-4246-945d-a5ced225a6bc"
+      }
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-build-properties",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "This app uses the camera to scan objects and determine how to dispose of them."
+        }
+      ],
+      "expo-font",
+      "expo-asset"
+    ]
   }
 }
